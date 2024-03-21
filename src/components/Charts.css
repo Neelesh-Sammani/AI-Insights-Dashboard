@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+SC:ital,wght@0,400;0,500;0,700;0,800;0,900;1,400;1,500;1,700;1,800;1,900&display=swap');
+
+/* General styles */
+.chart-container,
+.usage-statistics-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; /* Adjust as needed */
+}
+
+.chart,
+.usage-statistics-chart {
+  width: calc(50% - 10px); /* Adjust width to fit two charts per row */
+  margin-bottom: 20px; /* Adjust margin between rows */
+}
+
+.chart-inner {
+  border: 1px solid #ccc; /* Optional: Add border for visual separation */
+  padding: 10px; /* Optional: Add padding for spacing within each chart */
+}
+
+.summary-card {
+  border: 1px solid #ccc; /* Add a border */
+  border-radius: 5px; /* Optional: Add border radius for rounded corners */
+  padding: 20px; /* Add padding for spacing within the card */
+  width: fit-content;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+  .chart,
+  .usage-statistics-chart {
+    width: 100%; /* Full width on smaller screens */
+    margin-bottom: 20px; /* Adjust margin between rows */
+  }
+}
+
+@media only screen and (max-width: 1080px) {
+  .line-chart {
+    width: 100%; /* Set width to 100% for one chart per row */
+    margin-bottom: 20px; /* Adjust margin between rows */
+  }
+
+  .chart-inner {
+    padding: 20px; /* Increase padding for smaller screens */
+  }
+}
+
+/* Adjustments for line charts below 560px */
+@media only screen and (max-width: 560px) {
+  .line-chart .chart-inner {
+    border: none; /* Remove border for line charts below 560px */
+  }
+}
+
+/* Headings styles */
+h1, h2 {
+  font-family: 'Alegreya SC', serif; /* Use Alegreya SC font */
+  color: #0a6672; /* Darker color for headings */
+}

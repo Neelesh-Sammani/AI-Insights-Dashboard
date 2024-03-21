@@ -1,10 +1,16 @@
-.App {
-  text-align: center;
+.app-container{
+  margin-left: 30px;
+  background-color: #edf6f9;
+}
+
+.title{
+  color:#054e5b;
+  text-align:center;
 }
 
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@media only screen and (max-width: 360px){
+  .title{
+    text-align: start;
   }
 }
